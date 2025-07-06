@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snap Spark Media</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Snap Spark Media</h1>
+  </header>
+
+  <!-- Hero YouTube Video Section -->
+  <section class="hero-video">
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&mute=1" 
+      frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <!-- Reels Section -->
+  <section class="reels-section">
+    <h2>Edited Reels by Snap Spark</h2>
+    <div class="reel-grid">
+      <!-- 6 Sample Reels -->
+      <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+      <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+      <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+      <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+      <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+      <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="booking-section">
+    <h2>Book a Custom Edit Session</h2>
+    <form id="booking-form" onsubmit="event.preventDefault(); document.getElementById('payment-section').scrollIntoView({ behavior: 'smooth' });">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Instagram Handle" required>
+      <select required>
+        <option value="">Select Project Type</option>
+        <option>Reel Edit</option>
+        <option>Logo Animation</option>
+        <option>YouTube Edit</option>
+      </select>
+      <input type="datetime-local" required>
+      <button type="submit">Continue to Payment</button>
+    </form>
+  </section>
+
+  <!-- Payment Form (Mock) -->
+  <section class="payment-section" id="payment-section">
+    <h2>Payment Details</h2>
+    <form>
+      <input type="text" placeholder="Name on Card" required>
+      <input type="text" placeholder="Card Number" required>
+      <input type="text" placeholder="MM/YY" required>
+      <input type="text" placeholder="CVV" required>
+      <button type="submit">Pay Now</button>
+    </form>
+    <p class="note">*This is a mock payment form. Real payment integration can be added using Razorpay or Stripe.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Snap Spark Media. All rights reserved.</p>
+  </footer>
+</body>
+</html>
